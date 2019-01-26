@@ -90,7 +90,7 @@
     <li>25 Emails</li>
     <li>25 Domains</li>
     <li>2GB Bandwidth</li>
-    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+    <li class="grey"><a href="#" class="button">Sign Up</a> <a href="#" class="button">Sign Up</a></li>
   </ul>
 </div>
 
