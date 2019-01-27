@@ -90,7 +90,7 @@
   <ul class="price">
     <li class="header">Premium</li>
     <li class="grey">$ 49.99 / year</li>
-    <li><img src="ihttps://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"></li>
+    <li><img src="https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"></li>
 
     <li class="grey">Quantity<input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a></li>
   </ul>
