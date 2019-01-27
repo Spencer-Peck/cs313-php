@@ -74,21 +74,21 @@ session_start();
 <div class="center">
 	<center><h1>The Best Cookies</h1></center>
 </div>
-<form action="/action_page.php" method="get">
+<form action="addCart.php" method="post">
 <div class="columns">
   <ul class="price">
     <li class="header" style="background-color:#663203">Peanut Butter</li>
-    <li class="grey">$ 3.99 / box</li>
+    <li class="grey">$ 3.99 per box</li>
     <li><img src="https://www.modernhoney.com/wp-content/uploads/2018/10/Soft-Chewy-Peanut-Butter-Cookies-4-cr.jpg" alt="Chocolate chip" style="width:350px;height:200px;"></li>
     <li>Quantity<input type="number" id="myNumber" value="1"></li>
-    <li class="grey"><button name = "cart"  type="submit" class="button">Add to cart</li>
+    <li class="grey"><button name = "cart"  type="submit" class="button" value = "peanut">Add to cart</li>
   </ul>
 </div>
 
 <div class="columns">
   <ul class="price">
     <li class="header" style="background-color:#c47a36">Oatmeal</li>
-    <li class="grey">$ 4.99 / box</li>
+    <li class="grey">$ 4.99 per box</li>
     <li><img src="https://i2.wp.com/www.livewellbakeoften.com/wp-content/uploads/2017/01/Soft-and-Chewy-Oatmeal-Raisin-Cookies-3.jpg?resize=1360%2C2040" alt="Chocolate chip" style="width:350px;height:200px;"></li>
     <li>Quantity<input type="number" id="myNumber" value="1"></li>
     <li class="grey"><button name = "cart"  type="submit" class="button">Add to cart</li>
@@ -98,7 +98,7 @@ session_start();
 <div class="columns">
   <ul class="price">
     <li class="header" style="background-color:#663203">Chocolate Chip</li>
-    <li class="grey">$ 3.45 / box</li>
+    <li class="grey">$ 3.45 per box</li>
     <li><img src="https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Chocolate chip" style="width:350px;height:200px;"></li>
     <li>Quantity<input type="number" id="myNumber" value="1"></li>
 
