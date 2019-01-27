@@ -71,6 +71,14 @@ session_start();
 	</style>
 </head>
 <body>
+
+<?php
+$_SESSION["peanut"] = "false";
+$_SESSION["oatmeal"] = "false";
+$_SESSION["chip"] = "false";
+?>
+
+
 <div class="center">
 	<center><h1>The Best Cookies</h1></center>
 </div>
@@ -91,7 +99,7 @@ session_start();
     <li class="grey">$ 4.99 per box</li>
     <li><img src="https://i2.wp.com/www.livewellbakeoften.com/wp-content/uploads/2017/01/Soft-and-Chewy-Oatmeal-Raisin-Cookies-3.jpg?resize=1360%2C2040" alt="Chocolate chip" style="width:350px;height:200px;"></li>
     <li>Quantity<input type="number" id="myNumber" value="1"></li>
-    <li class="grey"><button name = "cart"  type="submit" class="button">Add to cart</li>
+    <li class="grey"><button name = "cart"  type="submit" class="button" value = "oatmeal">Add to cart</li>
   </ul>
 </div>
 
@@ -101,8 +109,7 @@ session_start();
     <li class="grey">$ 3.45 per box</li>
     <li><img src="https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Chocolate chip" style="width:350px;height:200px;"></li>
     <li>Quantity<input type="number" id="myNumber" value="1"></li>
-
-    <li class="grey"><a href="#" class="button">Add to cart</a></li>
+    <li class="grey"><button name = "cart"  type="submit" class="button" value = "chip">Add to cart</li>
   </ul>
 </div>
 </form>
