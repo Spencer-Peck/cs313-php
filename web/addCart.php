@@ -19,13 +19,13 @@ session_start();
 
   if ($myCart == "chip"){
   	$_SESSION["chip"] = "true";
-  	
+  	$_SESSION["qChip"] = $_POST["qChip"];
 
   }
 
   if ($myCart == "oatmeal"){
   	$_SESSION["oatmeal"] = "true";
-  	
+  	$_SESSION["qOatmeal"] = $_POST["qOatmeal"];
 
   }
   header( 'Location: browse.php' ) ;
