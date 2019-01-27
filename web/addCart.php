@@ -15,7 +15,6 @@ session_start();
   if ($myCart == "peanut"){
   	$_SESSION["peanut"] = "true";
   	$_SESSION["qPeanut"] = $_POST["qPeanut"];
-  	echo $_SESSION["qPeanut"];
   }
 
   if ($myCart == "chip"){
