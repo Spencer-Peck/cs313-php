@@ -68,7 +68,7 @@
 </head>
 <body>
 <div class="center">
-	<center>The Best Cookies</center>
+	<center><h1>The Best Cookies</h1></center>
 </div>
 <div class="columns">
   <ul class="price">
