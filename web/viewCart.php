@@ -12,8 +12,8 @@ session_start();
   <?php
   echo "<ul>";
   if ($_SESSION["peanut"] == true){
-    echo "<li> Box of Peanut Butter Cookies  Quantity: $_SESSION['qPeanut'] <br> subtotal: ";
-    echo "$ " . $_SESSION["qPeanut"] * 3.99;
+    echo "<li> Box of Peanut Butter Cookies  Quantity:" . $_SESSION['qPeanut'] . "<br> subtotal: ";
+    echo "$ " . $_SESSION["qPeanut"] * 3.99 . "</li>";
   }
   echo "</ul>";
 
