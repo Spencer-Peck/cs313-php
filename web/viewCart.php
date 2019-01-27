@@ -15,15 +15,15 @@ session_start();
   $isChip = $_SESSION["chip"];
 
   echo "<ul>";
-  if ($isPeanut == true){
+  if ($isPeanut){
     echo "<li> Box of Peanut Butter Cookies <br>  Quantity: " . $_SESSION['qPeanut'] . "<br> Subtotal: ";
     echo "$ " . $_SESSION["qPeanut"] * 3.99 . "</li>";
   }
-  if ($isOatmeal == true){
+  if ($isOatmeal){
     echo "<li> Box of Oatmeal Cookies <br>  Quantity: " . $_SESSION['qOatmeal'] . "<br> Subtotal: ";
     echo "$ " . $_SESSION["qOatmeal"] * 4.99 . "</li>";
   }
-  if ($isChip == true){
+  if ($isChip){
     echo "<li> Box of Chocolate Chip Cookies <br>  Quantity: " . $_SESSION['qChip'] . "<br> Subtotal: ";
     echo "$ " . $_SESSION["qChip"] * 3.45 . "</li>";
   }
