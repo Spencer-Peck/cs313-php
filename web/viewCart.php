@@ -25,7 +25,7 @@ session_start();
   }
   echo "</ul>";
 
-  echo "Total: " . ($_SESSION["qChip"] * 3.45) + ($_SESSION["qPeanut"] * 3.45) + ($_SESSION["qOatmeal"] * 3.45);
+  echo " <h1>Total: " . ($_SESSION["qChip"] * 3.45) + ($_SESSION["qPeanut"] * 3.45) + ($_SESSION["qOatmeal"] * 3.45 . "</h1>");
 
 
   ?>
