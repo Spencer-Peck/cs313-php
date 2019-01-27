@@ -73,12 +73,18 @@ session_start();
 <body>
 
 <?php
-$_SESSION["peanut"] = "false";
-$_SESSION["oatmeal"] = "false";
-$_SESSION["chip"] = "false";
-$_SESSION["qPeanut"] = 0;
-$_SESSION["qOatmeal"] = 0;
-$_SESSION["qChip"] = 0;
+if (!isset($_SESSION["peanut"]))
+	$_SESSION["peanut"] = "false";
+if (!isset($_SESSION["oatmeal"]))
+	$_SESSION["oatmeal"] = "false";
+if (!isset($_SESSION["chip"]))
+	$_SESSION["chip"] = "false";
+if (!isset($_SESSION["qPeanut"]))
+	$_SESSION["qPeanut"] = 0;
+if (!isset($_SESSION["qOatmeal"]))
+	$_SESSION["qOatmeal"] = 0;
+if (!isset($_SESSION["qChip"]))
+	$_SESSION["qChip"] = 0;
 ?>
 
 
