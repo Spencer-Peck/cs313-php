@@ -5,7 +5,7 @@
 </head>
 <body>
 
-  cart <?php echo $_POST["cart"]; ?><br>
+  cart <?php echo $_POST["qPeanut"]; ?><br>
 
   <?php
   
