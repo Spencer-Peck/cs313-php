@@ -61,7 +61,7 @@
 .center {
   margin: auto;
   width: 60%;
-  border: 3px solid #73AD21;
+  border: 3px solid #663203;
   padding: 10px;
 }
 	</style>
@@ -73,7 +73,8 @@
 <div class="columns">
   <ul class="price">
     <li class="header">Basic</li>
-    <li class="grey">$ 9.99 / year</li>
+    <li class="grey">$ 3.99</li>
+    <li><img src="https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Chocolate chip" style="width:400px;height:200px;"></li>
     <li class="grey">Quantity<input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a></li>
   </ul>
 </div>
@@ -81,7 +82,8 @@
 <div class="columns">
   <ul class="price">
     <li class="header" style="background-color:#4CAF50">Pro</li>
-    <li class="grey">$ 24.99 / year</li>
+    <li class="grey">$ 4.99</li>
+    <li><img src="https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Chocolate chip" style="width:400px;height:200px;"></li>
     <li class="grey">Quantity<input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a> </li>
   </ul>
 </div>
@@ -89,8 +91,8 @@
 <div class="columns">
   <ul class="price">
     <li class="header">Chocolate Chip</li>
-    <li class="grey">$ 49.99 / year</li>
-    <li><img src="https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Girl in a jacket" style="width:400px;height:200px;"></li>
+    <li class="grey">$ 3.45</li>
+    <li><img src="https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Chocolate chip" style="width:400px;height:200px;"></li>
 
     <li class="grey">Quantity<input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a></li>
   </ul>
