@@ -68,7 +68,7 @@
 </head>
 <body>
 <div class="center">
-	<h1> The best Cookies</h1>
+	<h1> The Best Cookies</h1>
 </div>
 <div class="columns">
   <ul class="price">
@@ -90,7 +90,7 @@
     <li>25 Emails</li>
     <li>25 Domains</li>
     <li>2GB Bandwidth</li>
-    <li class="grey"><a href="#" class="button">Sign Up</a> <a href="#" class="button">Sign Up</a></li>
+    <li class="grey"><a href="#" class="button">Sign Up</a> <input type="number" id="myNumber" value="2"></li>
   </ul>
 </div>
 
