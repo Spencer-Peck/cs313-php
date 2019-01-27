@@ -93,8 +93,9 @@
     <li class="header" style="background-color:#663203">Chocolate Chip</li>
     <li class="grey">$ 3.45</li>
     <li><img src="https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Chocolate chip" style="width:400px;height:200px;"></li>
+    <li>Quantity<input type="number" id="myNumber" value="1"></li>
 
-    <li class="grey">Quantity<input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a></li>
+    <li class="grey"><a href="#" class="button">Add to cart</a></li>
   </ul>
 </div>
 	
