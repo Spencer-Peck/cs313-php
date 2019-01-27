@@ -14,6 +14,8 @@ session_start();
   $isOatmeal = $_SESSION["oatmeal"];
   $isChip = $_SESSION["chip"];
 
+  echo $isChip;
+
   echo "<ul>";
   if ($isPeanut){
     echo "<li> Box of Peanut Butter Cookies <br>  Quantity: " . $_SESSION['qPeanut'] . "<br> Subtotal: ";
