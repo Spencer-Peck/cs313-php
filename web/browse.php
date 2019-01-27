@@ -68,7 +68,7 @@
 </head>
 <body>
 <div class="center">
-	<h1> The Best </h1>
+	<h1 class="center"> The Best Cookies </h1>
 </div>
 <div class="columns">
   <ul class="price">
@@ -88,7 +88,7 @@
 
 <div class="columns">
   <ul class="price">
-    <li class="header">Premium</li>
+    <li class="header">Chocolate Chip</li>
     <li class="grey">$ 49.99 / year</li>
     <li><img src="https://www.handletheheat.com/wp-content/uploads/2018/02/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9.jpg" alt="Girl in a jacket" style="width:400px;height:200px;"></li>
 
