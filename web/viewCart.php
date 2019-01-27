@@ -7,11 +7,11 @@ session_start();
 	<style type="text/css"></style>
 </head>
 <body>
-  <center><h1>Your Cart</h1/center>
+  <center><h1>Your Cart</h1></center>
 
   <?php
   echo "<ul>";
-  if ($_SESSION["peanut"]){
+  if ($_SESSION["peanut"] == true){
     echo "<li> Box of Peanut Butter Cookies  Quantity: $_SESSION['qPeanut'] <br> subtotal: ";
     echo "$ " . $_SESSION["qPeanut"] * 3.99;
   }
