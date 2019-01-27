@@ -14,18 +14,18 @@ session_start();
 
   if ($myCart == "peanut"){
   	$_SESSION["peanut"] = "true";
-  	$_SESSION["qPeanut"] = $_POST["qPeanut"];
+  	$_SESSION["qPeanut"] += $_POST["qPeanut"];
   }
 
   if ($myCart == "chip"){
   	$_SESSION["chip"] = "true";
-  	$_SESSION["qChip"] = $_POST["qChip"];
+  	$_SESSION["qChip"] += $_POST["qChip"];
 
   }
 
   if ($myCart == "oatmeal"){
   	$_SESSION["oatmeal"] = "true";
-  	$_SESSION["qOatmeal"] = $_POST["qOatmeal"];
+  	$_SESSION["qOatmeal"] += $_POST["qOatmeal"];
 
   }
   header( 'Location: browse.php' ) ;
