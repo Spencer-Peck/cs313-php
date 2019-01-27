@@ -12,6 +12,7 @@ session_start();
 
   <?php
   
+  $myCart = $_POST["cart"];
 
   if ($myCart == "peanut"){
   	$_SESSION["peanut"] = "true";
