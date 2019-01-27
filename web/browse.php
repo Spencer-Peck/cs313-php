@@ -76,6 +76,9 @@ session_start();
 $_SESSION["peanut"] = "false";
 $_SESSION["oatmeal"] = "false";
 $_SESSION["chip"] = "false";
+$_SESSION["qPeanut"] = 0;
+$_SESSION["qOatmeal"] = 0;
+$_SESSION["qChip"] = 0;
 ?>
 
 
@@ -88,7 +91,7 @@ $_SESSION["chip"] = "false";
     <li class="header" style="background-color:#663203">Peanut Butter</li>
     <li class="grey">$ 3.99 per box</li>
     <li><img src="https://www.modernhoney.com/wp-content/uploads/2018/10/Soft-Chewy-Peanut-Butter-Cookies-4-cr.jpg" alt="Chocolate chip" style="width:350px;height:200px;"></li>
-    <li>Quantity<input type="number" id="myNumber" value="1"></li>
+    <li>Quantity<input type="number" name = "qPeanut" id="myNumber" value="1"></li>
     <li class="grey"><button name = "cart"  type="submit" class="button" value = "peanut">Add to cart</li>
   </ul>
 </div>

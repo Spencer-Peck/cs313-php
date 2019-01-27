@@ -8,22 +8,23 @@
   cart <?php echo $_POST["cart"]; ?><br>
 
   <?php
-  $myCart = $_POST["cart"];
+  
 
   if ($myCart == "peanut"){
   	$_SESSION["peanut"] = "true";
-  	echo $_POST["cart"];
+  	$_SESSION["qPeanut"] = $_POST["qPeanut"];
+  	echo $_SESSION["qPeanut"];
   }
 
   if ($myCart == "chip"){
   	$_SESSION["chip"] = "true";
-  	echo $_POST["cart"];
+  	
 
   }
 
   if ($myCart == "oatmeal"){
   	$_SESSION["oatmeal"] = "true";
-  	echo $_POST["cart"];
+  	
 
   }
 
