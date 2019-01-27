@@ -10,16 +10,20 @@ session_start();
   <center><h1>Your Cart</h1></center>
 
   <?php
+  $isPeanut = $_SESSION["peanut"];
+  $isOatmeal = $_SESSION["oatmeal"];
+  $isChip = $_SESSION["chip"];
+
   echo "<ul>";
-  if ($_SESSION["peanut"] == true){
+  if ($isPeanut == true){
     echo "<li> Box of Peanut Butter Cookies <br>  Quantity: " . $_SESSION['qPeanut'] . "<br> Subtotal: ";
     echo "$ " . $_SESSION["qPeanut"] * 3.99 . "</li>";
   }
-  if ($_SESSION["oatmeal"] == true){
+  if ($isOatmeal == true){
     echo "<li> Box of Oatmeal Cookies <br>  Quantity: " . $_SESSION['qOatmeal'] . "<br> Subtotal: ";
     echo "$ " . $_SESSION["qOatmeal"] * 4.99 . "</li>";
   }
-  if ($_SESSION["chip"] == true){
+  if ($isChip == true){
     echo "<li> Box of Chocolate Chip Cookies <br>  Quantity: " . $_SESSION['qChip'] . "<br> Subtotal: ";
     echo "$ " . $_SESSION["qChip"] * 3.45 . "</li>";
   }
