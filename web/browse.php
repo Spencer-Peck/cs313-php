@@ -78,7 +78,7 @@
     <li>10 Emails</li>
     <li>10 Domains</li>
     <li>1GB Bandwidth</li>
-    <li class="grey"><input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a></li>
+    <li class="grey">Quantity<input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a></li>
   </ul>
 </div>
 
@@ -90,7 +90,7 @@
     <li>25 Emails</li>
     <li>25 Domains</li>
     <li>2GB Bandwidth</li>
-    <li class="grey"><input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a> </li>
+    <li class="grey">Quantity<input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a> </li>
   </ul>
 </div>
 
@@ -102,7 +102,7 @@
     <li>50 Emails</li>
     <li>50 Domains</li>
     <li>5GB Bandwidth</li>
-    <li class="grey"><input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a></li>
+    <li class="grey">Quantity<input type="number" id="myNumber" value="1"><a href="#" class="button">Add to cart</a></li>
   </ul>
 </div>
 	
