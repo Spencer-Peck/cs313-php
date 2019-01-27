@@ -8,8 +8,6 @@ session_start();
 </head>
 <body>
 
-  cart <?php echo $_POST["qPeanut"]; ?><br>
-
   <?php
   
   $myCart = $_POST["cart"];
@@ -31,8 +29,7 @@ session_start();
   	
 
   }
-  print_r($_SESSION);
-
+  header( 'Location: browse.php' ) ;
 
 
   ?>
