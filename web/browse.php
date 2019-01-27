@@ -81,7 +81,7 @@ session_start();
     <li class="grey">$ 3.99</li>
     <li><img src="https://www.modernhoney.com/wp-content/uploads/2018/10/Soft-Chewy-Peanut-Butter-Cookies-4-cr.jpg" alt="Chocolate chip" style="width:350px;height:200px;"></li>
     <li>Quantity<input type="number" id="myNumber" value="1"></li>
-    <li class="grey"><a href="#" class="button">Add to cart</a></li>
+    <li class="grey"><button name = "cart"  type="submit" class="button">Add to cart</li>
   </ul>
 </div>
 
@@ -91,11 +91,7 @@ session_start();
     <li class="grey">$ 4.99</li>
     <li><img src="https://i2.wp.com/www.livewellbakeoften.com/wp-content/uploads/2017/01/Soft-and-Chewy-Oatmeal-Raisin-Cookies-3.jpg?resize=1360%2C2040" alt="Chocolate chip" style="width:350px;height:200px;"></li>
     <li>Quantity<input type="number" id="myNumber" value="1"></li>
-    <li class="grey">
-    	
-    		<button name = "cart"  type="submit" class="button">Add to cart</a> 
-</form>
-    </li>
+    <li class="grey"><button name = "cart"  type="submit" class="button">Add to cart</li>
   </ul>
 </div>
 
@@ -109,6 +105,7 @@ session_start();
     <li class="grey"><a href="#" class="button">Add to cart</a></li>
   </ul>
 </div>
+</form>
 	
 </body>
 </html>
