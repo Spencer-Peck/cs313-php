@@ -83,7 +83,7 @@ $_SESSION["qChip"] = 0;
 
 
 <div class="center">
-	<center><h1>The Best Cookies</h1> <a href="viewCart">View Cart</a></center>
+	<center><h1>The Best Cookies</h1> <a href="viewCart.php">View Cart</a></center>
 </div>
 <form action="addCart.php" method="post">
 <div class="columns">
