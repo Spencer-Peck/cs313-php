@@ -17,9 +17,9 @@
     <?php
     foreach ($db->query('SELECT winner_name, score, session_description, date FROM game_session WHERE game_id = 1') as $row)
     {
-        echo '<tr><td>' . $row['s.winner_name'] . '</td><td>' . $row['s.score'] . '</td>' .
-        '<td>' . $row['s.winner_name'] . '</td><td>' . $row['s.session_description'] . '</td><td>' .
-        $row['s.date'] . '</td></tr>';
+        echo '<tr><td>' . $row['winner_name'] . '</td><td>' . $row['score'] . '</td>' .
+        '<td>' . $row['winner_name'] . '</td><td>' . $row['session_description'] . '</td><td>' .
+        $row['date'] . '</td></tr>';
 
     }
 
