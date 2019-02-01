@@ -3,11 +3,12 @@
 
 
 <div class="container">
-<h2><?php echo $_GET["name"];?></h2>            
+<h2><?php echo $_GET["name"];?></h2>
+&emsp;<a href="#" class="btn btn-success " role="button" >Add New</a>            
   <table class="table table-striped" id="games">
     <thead>
       <tr>
-        <th onclick="sortTable(0)">Winner Name &emsp;<a href="#" class="btn btn-success " role="button" >Add New</a></th>
+        <th onclick="sortTable(0)">Winner Name </th>
         <th onclick="sortTable(1)">Score</th>
         <th onclick="sortTable(2)">Date</th>
         <th onclick="sortTable(3)">Sort By</th>
