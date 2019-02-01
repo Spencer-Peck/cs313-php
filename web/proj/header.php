@@ -15,7 +15,7 @@
   <script src="path/to/bootstrap-confirmation.js"></script>
 </head>
 <body>
-
+<?php include 'https://cdn.jsdelivr.net/npm/bootstrap-confirmation2/dist/bootstrap-confirmation.min.js';?>
 <?php include 'db_connect.php';?>
 
 
