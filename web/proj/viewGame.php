@@ -2,7 +2,7 @@
 <?php include 'order.php';?>
 
 
-<div class="container">
+<div class="container-fluid">
 <div class="row"><div class="col-sm"><h2><?php echo $_GET["name"];?></h2></div> <div class="col-sm" class="text-right"><a href="#" class="btn btn-success " role="button" >Add Score</a></div></div>         
   <table class="table table-striped" id="games">
     <thead>
