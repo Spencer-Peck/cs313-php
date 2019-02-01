@@ -27,7 +27,7 @@
 </nav>
 
 <div class="container">
-  <h2>List Group With Linked Items</h2>
+  <h2>Games:</h2>
   <div class="list-group">
     <a href="#" class="list-group-item list-group-item-action">First item</a>
     <a href="#" class="list-group-item list-group-item-action">Second item</a>
