@@ -2,7 +2,8 @@
 
 
 
-<div class="container">            
+<div class="container">
+<h2><?php echo $_GET["name"];?></h2>            
   <table class="table table-striped">
     <thead>
       <tr>
