@@ -3,7 +3,7 @@
 
 
 <div class="container">
-<h2><?php echo $_GET["name"];?> <div class="text-right"><a href="#" class="btn btn-success " role="button" >Add Score</a></div></h2>            
+<h2><?php echo $_GET["name"];?></h2> <div class="text-right"><a href="#" class="btn btn-success " role="button" >Add Score</a></div>           
   <table class="table table-striped" id="games">
     <thead>
       <tr>
