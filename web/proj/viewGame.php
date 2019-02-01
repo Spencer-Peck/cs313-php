@@ -1,16 +1,16 @@
 <?php include 'header.php';?>
-
+<?php include 'order.js';?>
 
 
 <div class="container">
 <h2><?php echo $_GET["name"];?></h2>            
-  <table class="table table-striped">
+  <table class="table table-striped" id="games">
     <thead>
       <tr>
-        <th>Winner Name</th>
-        <th>Score</th>
-        <th>Date</th>
-        <th>Sort By</th>
+        <th onclick="sortTable(0)">Winner Name</th>
+        <th onclick="sortTable(1)">Score</th>
+        <th onclick="sortTable(2)">Date</th>
+        <th onclick="sortTable(3)">Sort By</th>
       </tr>
     </thead>
     <tbody>
