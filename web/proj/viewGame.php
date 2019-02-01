@@ -3,7 +3,7 @@
 
 
 <div class="container">
-<h2><?php echo $_GET["name"];?> &emsp;<a href="#" class="btn btn-success " role="button" >Add New</a></h2>            
+<h2><?php echo $_GET["name"];?> &emsp;<a href="#" class="btn btn-success " role="button" >Add Score</a></h2>            
   <table class="table table-striped" id="games">
     <thead>
       <tr>
