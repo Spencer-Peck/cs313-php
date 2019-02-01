@@ -11,6 +11,7 @@
         <th>Score</th>
         <th>Game Notes</th>
         <th>Date</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
