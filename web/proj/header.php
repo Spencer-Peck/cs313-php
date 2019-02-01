@@ -49,8 +49,5 @@ catch (PDOException $ex)
     <li class="nav-item">
       <a class="nav-link" href="#">Add/Edit Games</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Add/Edit Sessions</a>
-    </li>
   </ul>
 </nav>
