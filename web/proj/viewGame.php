@@ -2,8 +2,8 @@
 <?php include 'order.php';?>
 
 
-<div class="container-fluid">
-<div class="row"><div class="col-sm"><h2><?php echo $_GET["name"];?></div> <div class="text-right col-sm"><a href="#" class="btn btn-success " role="button" >Add Score</a></div></h2></div>         
+<div class="container">
+<div><h2><?php echo $_GET["name"];?></h2> <div class="text-right"><a href="#" class="btn btn-success " role="button" >Add Score</a></div></div>         
   <table class="table table-striped" id="games">
     <thead>
       <tr>
