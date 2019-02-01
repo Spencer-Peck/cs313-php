@@ -42,7 +42,7 @@ catch (PDOException $ex)
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand/logo -->
-  <a class="navbar-brand" href="#">Score Keeper</a>
+  <a class="navbar-brand" href="home.php">Score Keeper</a>
   
   <!-- Links -->
   <ul class="navbar-nav">
