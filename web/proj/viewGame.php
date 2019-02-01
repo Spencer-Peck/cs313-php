@@ -1,5 +1,5 @@
 <?php include 'header.php';?>
-<?php include 'order.js';?>
+<?php include 'order.php';?>
 
 
 <div class="container">

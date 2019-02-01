@@ -12,14 +12,10 @@
   <script type="text/javascript" src="path/to/jquery.js"></script>
 <script type="text/javascript" src="path/to/bootstrap-tooltip.js"></script>
 <script type="text/javascript" src="path/to/bootstrap-confirmation.js"></script> 
-<script src="path/to/jquery.js"></script>
-<script src="path/to/popper.js"></script>
-<script src="path/to/bootstrap.js"></script>
-<script src="path/to/bootstrap-confirmation.js"></script>
+
 </head>
 
 <body>
-<?php include 'bootstrap-confirmation.min.js';?>
 <?php include 'db_connect.php';?>
 
 
