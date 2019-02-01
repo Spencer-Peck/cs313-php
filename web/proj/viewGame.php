@@ -9,7 +9,6 @@
       <tr>
         <th>Winner Name</th>
         <th>Score</th>
-        <th>Game Notes</th>
         <th>Date</th>
         <th></th>
       </tr>
