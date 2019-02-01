@@ -10,7 +10,7 @@
         <th>Winner Name</th>
         <th>Score</th>
         <th>Date</th>
-        <th></th>
+        <th>Sort By</th>
       </tr>
     </thead>
     <tbody>
