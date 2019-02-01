@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="navbar navbar-default">
-  <div class="container-fluid">https://safe-falls-66937.herokuapp.com/proj/home.php#
+  <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Score Keeper</a>
     </div>
