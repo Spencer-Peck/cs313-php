@@ -5,9 +5,9 @@
   <div class="list-group">
 
     <?php
-    foreach ($db->query('SELECT game_name FROM games') as $row)
+    foreach ($db->query('SELECT game_name, game_id FROM games') as $row)
     {
-        echo '<a href="#" class="list-group-item list-group-item-action">' . $row['game_name'] . '</a>';
+        echo '<a href="viewGame.php?game_id=' . $row['game_id'] . '"class="list-group-item list-group-item-action">' . $row['game_name'] . '</a>';
     }
 
     ?>
