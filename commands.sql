@@ -13,3 +13,5 @@ CREATE TABLE game_session (
 	session_description   varchar(80),
 	date                  date  
 );
+
+INSERT INTO games (game_id, game_name) VALUES ('1', 'Aquire');

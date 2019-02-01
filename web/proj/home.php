@@ -11,6 +11,35 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<?php  
+
+try
+{
+  $dbUrl = getenv('DATABASE_URL');
+
+  $dbOpts = parse_url($dbUrl);
+
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
+
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex)
+{
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
+
+?>
+
+
+
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand/logo -->
   <a class="navbar-brand" href="#">Score Keeper</a>
@@ -29,9 +58,15 @@
 <div class="container">
   <h2>Games:</h2>
   <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">First item</a>
-    <a href="#" class="list-group-item list-group-item-action">Second item</a>
-    <a href="#" class="list-group-item list-group-item-action">Third item</a>
+
+    <?php
+    foreach ($db->query('SELECT game_name FROM games') as $row)
+    {
+        echo '<a href="#" class="list-group-item list-group-item-action">' . $row['game_name'] . '</a>'
+    }
+
+    ?>
+    
   </div>
 </div>
 
