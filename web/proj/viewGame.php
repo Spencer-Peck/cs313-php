@@ -22,7 +22,7 @@
     {
         echo '<tr><td>' . $row['winner_name'] . '</td><td>' . $row['score'] . '</td>' .
         '<td>' . $row['date'] . '</td>';
-        echo '<td><button href="add_delete.php?game_id=$game_id&name=$name&session_id=' . $row['session_id'] .'&action=delete" type="button" class="btn btn-danger" data-toggle="confirmation">Delete</button></td></tr>';
+        echo '<td><a href="add_delete.php?game_id=$game_id&name=$name&session_id=' . $row['session_id'] .'&action=delete" role="button" class="btn btn-danger">Delete</a></td></tr>';
 
     }
 
