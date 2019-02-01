@@ -21,7 +21,7 @@
     {
         echo '<tr><td>' . $row['winner_name'] . '</td><td>' . $row['score'] . '</td>' .
         '<td>' . $row['date'] . '</td>';
-        echo '<td><button type="button" class="btn btn-danger">Delete</button></td></tr>';
+        echo '<td><button type="button" data-toggle="confirmation" class="btn btn-danger">Delete</button></td></tr>';
 
     }
 
