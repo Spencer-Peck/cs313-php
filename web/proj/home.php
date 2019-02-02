@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 
 <div class="container">
-  <h2>Games: <?php $date = date("Y-m-d"); echo $date;?></h2>
+  <h2>Games:</h2>
   <div class="list-group">
 
     <?php
