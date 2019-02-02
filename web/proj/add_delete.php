@@ -12,7 +12,7 @@ if ($action == "delete"){
 }
 
 if ($action == "add"){
-	$stmt = $db->prepare('INSERT INTO game_session (game_id, winner_name, score, date) VALUES  ('.$game_id.', "'.$winner.'", "'.$score.'", "'.date("Y/m/d").'")')
+	$stmt = $db->prepare('INSERT INTO game_session (game_id, winner_name, score, date) VALUES  ('.$game_id.', "'.$winner.'", "'.$score.'", "'.date("Y/m/d").'")');
 	$stmt->execute();
 }
 
