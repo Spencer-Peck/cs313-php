@@ -11,7 +11,7 @@ $name = $_GET["name"];
     <label for="score">Score:</label>
     <input type="text" name="score" class="form-control" id="score">
   </div>
-  <button type="submit" class="btn btn-primary" value="Add Score">Submit</button>
+  <button type="submit" class="btn btn-primary" value="Submit">Add Score</button>
 </form>
 </div>
 
