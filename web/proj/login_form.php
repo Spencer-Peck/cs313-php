@@ -27,7 +27,6 @@
 <div class="container-fluid">
   <h1>Login</h1>
   <br>
-  <br>
 <form action="login.php" method="post">
   <div class="form-group">
     <label for="username">User Name</label>
