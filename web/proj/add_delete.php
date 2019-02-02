@@ -3,8 +3,8 @@
 $action = $_GET["action"];
 $name = $_GET["name"];
 $game_id = $_GET["game_id"];
-$winner = $_GET["win_name"];
-$score = $_GET["score"];
+$winner = $_POST["win_name"];
+$score = $_POST["score"];
 $theDate = date("Y-m-d");
 echo '<h1>'.$score.'</h1>';
 if ($action == 'delete'){
