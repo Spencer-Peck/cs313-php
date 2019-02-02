@@ -5,7 +5,7 @@ $name = $_GET["name"];
 $game_id = $_GET["game_id"];
 $winner = $_GET["win_name"];
 $score = $_GET["score"];
-$theDate = date("Y/m/d");
+$theDate = date("Y-m-d");
 if ($action == "delete"){
 	$session_id = $_GET["session_id"];
 	$stmt = $db->prepare('DELETE FROM game_session WHERE session_id = ' . $session_id);
