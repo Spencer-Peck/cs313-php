@@ -1,6 +1,6 @@
 <?php include 'header.php';?>
 <div class="container-fluid">
-<form action=<?php echo 'add_delete.php?game_id='.$_GET["game_id"].'&action=add';?> method="POST">
+<form action=<?php echo '"add_delete.php?game_id='.$_GET["game_id"].'&action=add"';?> method="POST">
 	<div class="form-group">
     <label for="win_name">Name:</label>
     <input type="text" name="win_name" class="form-control" id="win_name">
