@@ -3,7 +3,7 @@
 
 <?php
 $game_id = $_GET["game_id"];
-$add_form_url = 'add_score_form.php?game_id=$game_id';
+$add_form_url = 'add_score_form.php?game_id='.$game_id;
 
 ?>
 
