@@ -24,7 +24,7 @@
 </nav>
 
 
-<div class="container-fluid">
+<div class="container">
   <h1>Login</h1>
   <br>
 <form action="login.php" method="post">
