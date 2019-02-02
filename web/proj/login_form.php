@@ -24,7 +24,7 @@
 </nav>
 
 
-<div class="container">
+<div class="container d-flex justify-content-center"">
   <h1>Login</h1>
   <br>
 <form action="login.php" method="post">
