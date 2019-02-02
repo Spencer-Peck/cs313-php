@@ -11,7 +11,7 @@ $add_form_url = 'add_score_form.php?game_id='.$game_id.'&name='.$name;
 
 
 <div class="container">
-<h2><?php echo $_GET["name"];?> <div class="text-right"><a href=<?php echo $add_form_url; ?> class="btn btn-success " role="button" >Add Score</a></div></h2>            
+<h2><?php echo $_GET["name"];?> <div class="text-right"><a href=<?php echo '"'.$add_form_url.'"'; ?> class="btn btn-success " role="button" >Add Score</a></div></h2>            
   <table class="table table-striped" id="games">
     <thead>
       <tr>
