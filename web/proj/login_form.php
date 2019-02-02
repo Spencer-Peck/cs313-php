@@ -18,13 +18,13 @@
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand/logo -->
-  <a class="navbar-brand" href="home.php">Score Keeper</a>
+  <a class="navbar-brand" href="">Score Keeper</a>
   
   <!-- Links -->
 </nav>
 
 
-<div class="container d-flex justify-content-center"">
+<div class="container">
   <h1>Login</h1>
   <br>
 <form action="login.php" method="post">
