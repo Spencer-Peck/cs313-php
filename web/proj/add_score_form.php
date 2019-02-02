@@ -1,5 +1,5 @@
 <?php include 'header.php';?>
-
+<div class="container-fluid">
 <form action="/action_page.php">
   <div class="form-group">
     <label for="email">Email address:</label>
@@ -14,6 +14,7 @@
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
+</div>
 
 
 </body>
