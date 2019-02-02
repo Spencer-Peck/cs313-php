@@ -1,6 +1,6 @@
 <?php include 'header.php';?>
 <div class="container-fluid">
-<form action="/action_page.php">
+<form action=<?php echo 'add_delete.php?game_id='.$_GET["game_id"].'&action=add';?> method = "post">
 	<div class="form-group">
     <label for="name">Name:</label>
     <input type="text" class="form-control" id="name">
