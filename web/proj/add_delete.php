@@ -6,6 +6,7 @@ $game_id = $_GET["game_id"];
 $winner = $_GET["win_name"];
 $score = $_GET["score"];
 $theDate = date("Y-m-d");
+echo '<h1>$score</h1>';
 if ($action == 'delete'){
 	$session_id = $_GET["session_id"];
 	$stmt = $db->prepare('DELETE FROM game_session WHERE session_id = ' . $session_id);
@@ -25,7 +26,7 @@ if ($action == 'add'){
 
 $page = "viewGame.php?game_id=$game_id&name=$name";
 
-header("location: $page");
-die();
+//header("location: $page");
+//die();
 
 ?>
