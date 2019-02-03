@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Spencer's Home</title>
+  <title></title>
   <style type="text/css"></style>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,28 +25,17 @@
 
 
 <div class="container">
-  <h1>Login</h1>
+  <h1>Create Account</h1>
   <br>
-<form action="login.php" method="post">
+<form action="" method="post">
   <div class="form-group">
-    <label for="username">User Name</label>
+    <label for="username">Create User Name</label>
     <input type="text" class="form-control" name ="username" id="username" placeholder="Enter username">
   </div>
   <div class="form-group">
-    <label for="password">Password</label>
+    <label for="password">Create Password</label>
     <input type="password" class="form-control" id="password" name="pwd" placeholder="Password">
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn btn-primary">Create Account</button>
 </form>
-<br>
-<a href="account_form.php">Create Account</a>
 </div>
-<?php 
-session_start();
-if (isset($_SESSION['expired'])) {
-echo '<div class="alert alert-warning" role="alert">You were signed out due to inactivity</div>';
-}
-?>
-
-</body>
-</html>
