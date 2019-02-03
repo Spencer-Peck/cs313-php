@@ -16,7 +16,10 @@
 </head>
 
 <body>
-<?php include 'db_connect.php';?>
+<?php include 'session.php';
+
+?>
+
 
 
 
