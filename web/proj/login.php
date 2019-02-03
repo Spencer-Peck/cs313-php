@@ -11,8 +11,8 @@ $statement->bindValue(':username', $myusername, PDO::PARAM_STR);
 $statement->bindValue(':password', $mypassword, PDO::PARAM_STR);
 $statement->execute();
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
-$val = pg_fetch_result($results, 0);
-$count = pg_num_rows($results);
+$val = $results[0]['user_id'];
+$count = pg_num_rows($statement);
 echo '<h1>'.$results.'</h1>';
 
 if($count == 1) {
