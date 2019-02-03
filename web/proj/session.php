@@ -18,6 +18,7 @@ if(!isset($_SESSION['login_user'])){
     // last request was more than 30 minutes ago
     session_unset();     // unset $_SESSION variable for the run-time 
     session_destroy();   // destroy session data in storage
+    $_SESSION['expired'] = true;
 }
  // update last activity time stamp
 $_SESSION['LAST_ACTIVITY'] = time();

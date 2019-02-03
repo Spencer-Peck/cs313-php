@@ -1,4 +1,4 @@
-<?php include 'db_connect.php';
+<?php include 'session.php';;
 
 $action = $_GET["action"];
 $name = $_GET["name"];
