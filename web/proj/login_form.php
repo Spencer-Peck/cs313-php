@@ -43,7 +43,7 @@
 </div>
 <?php 
 if (isset($_SESSION['expired'])) {
-echo '<div class="alert alert-warning" role="alert">You were signed out due to inactivity</div>'
+echo '<div class="alert alert-warning" role="alert">You were signed out due to inactivity</div>';
 }
 ?>
 
