@@ -4,8 +4,8 @@ session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
-	 $myusername = pg_escape_string($_POST['username']);
-     $mypassword = pg_escape_string($_POST['password']);
+	 $myusername = $_POST['username'];
+     $mypassword = $_POST['password'];
 
 
      $statement = $db->query('SELECT user_id FROM users WHERE user_name = :username AND password = :password');
