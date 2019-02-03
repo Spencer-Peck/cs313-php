@@ -13,7 +13,7 @@ $statement->execute();
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $val = $results[0]['user_id'];
 $count = count($results);
-..echo '<h1>'.$val.'</h1>';
+//echo '<h1>'.$val.'</h1>';
 
 if($count == 1) {
     $_SESSION['login_user'] = $myusername;
