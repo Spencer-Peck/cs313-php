@@ -28,6 +28,13 @@
 <div class="container">
   <h1>Login</h1>
   <br>
+  <?php 
+if (isset($_SESSION['create'])) {
+echo '<div class="alert alert-success" role="alert">Account created successfully</div>';
+unset($_SESSION['create']); 
+
+}
+?>
 <form action="login.php" method="post">
   <div class="form-group">
     <label for="username">User Name</label>
@@ -42,13 +49,6 @@
 <br>
 <a href="account_form.php">Create Account</a>
 </div>
-<?php 
-if (isset($_SESSION['create'])) {
-echo '<div class="alert alert-success" role="alert">Account created successfully</div>';
-unset($_SESSION['create']);
-
-}
-?>
 
 </body>
 </html>
