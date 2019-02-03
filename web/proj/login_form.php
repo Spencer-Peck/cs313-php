@@ -45,6 +45,8 @@
 <?php 
 if (isset($_SESSION['create'])) {
 echo '<div class="alert alert-success" role="alert">Account created successfully</div>';
+unset($_SESSION['create']);
+
 }
 ?>
 
