@@ -13,10 +13,8 @@ include 'db_connect.php';
 	$stmt->execute();
 	$_SESSION["create"] = TRUE;
 	header("location:login_form.php");
-      die();
 }else{
 	header("location:account_form.php");
-      die();
 }
 
 
