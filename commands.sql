@@ -22,9 +22,9 @@ CREATE TABLE users (
 	password    varchar(200)
 );
 
-INSERT INTO games (game_id, game_name) VALUES ('1', 'Aquire');
-INSERT INTO games (game_id, game_name) VALUES ('2', 'Risk');
-INSERT INTO games (game_id, game_name) VALUES ('3', 'Settlers of Catan');
+INSERT INTO games (game_id, game_name, user_id) VALUES ('1', 'Aquire', 1);
+INSERT INTO games (game_id, game_name, user_id) VALUES ('2', 'Risk', 1);
+INSERT INTO games (game_id, game_name, user_id) VALUES ('3', 'Settlers of Catan', 1);
 
 INSERT INTO users (user_name, password) VALUES ('spencer', 'pass');
 

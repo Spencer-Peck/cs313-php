@@ -18,6 +18,7 @@ $count = count($results);
 if($count == 1) {
     $_SESSION['login_user'] = $myusername;
     $_SESSION['user_id'] = $val;
+    $_SESSION['LAST_ACTIVITY'] = time();
     header("location: home.php");
 }else {
     $error = "Your Login Name or Password is invalid";
