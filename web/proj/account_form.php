@@ -27,7 +27,7 @@
 <div class="container">
   <h1>Create Account</h1>
   <br>
-<form action="" method="post">
+<form action="create_account.php" method="post">
   <div class="form-group">
     <label for="username">Create User Name</label>
     <input type="text" class="form-control" name ="username" id="username" placeholder="Enter username">
