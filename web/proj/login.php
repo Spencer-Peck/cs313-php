@@ -6,9 +6,9 @@ $myusername = $_POST['username'];
 $mypassword = $_POST['pwd'];
 $count = 0;
 
-$statement = $db->query('SELECT user_id FROM users WHERE user_name = :username AND password = :password');
-$statement->bindValue(':username', $myusername, PDO::PARAM_STR);
-$statement->bindValue(':password', $mypassword, PDO::PARAM_STR);
+$statement = $db->query('SELECT user_id FROM users WHERE user_name = '.$myusername.' AND password ='.$mypassword);
+//$statement->bindValue(':username', $myusername, PDO::PARAM_STR);
+//$statement->bindValue(':password', $mypassword, PDO::PARAM_STR);
 //$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 //$count = pg_num_rows($results);
 
