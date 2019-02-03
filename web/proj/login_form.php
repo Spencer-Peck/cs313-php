@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,9 +43,8 @@
 <a href="account_form.php">Create Account</a>
 </div>
 <?php 
-session_start();
-if (isset($_SESSION['expired'])) {
-echo '<div class="alert alert-warning" role="alert">You were signed out due to inactivity</div>';
+if (isset($_SESSION['create'])) {
+echo '<div class="alert alert-success" role="alert">Account created successfully</div>';
 }
 ?>
 

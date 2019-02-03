@@ -11,6 +11,7 @@ include 'db_connect.php';
 	$stmt->bindValue(':username', $username, PDO::PARAM_STR);
 	$stmt->bindValue(':password', $password, PDO::PARAM_STR);
 	$stmt->execute();
+	$_SESSION["create"] = TRUE;
 	header("location:login_form.php");
       die();
 }else{
