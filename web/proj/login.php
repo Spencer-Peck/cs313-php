@@ -6,11 +6,11 @@ $myusername = $_POST['username'];
 $mypassword = $_POST['pwd'];
 
 
-$statement = $db->query('SELECT user_id FROM users WHERE user_name = :username AND password = :password');
+//$statement = $db->query('SELECT user_id FROM users WHERE user_name = :username AND password = :password');
 //$statement->bindValue(':username', $myusername, PDO::PARAM_STR);
 //$statement->bindValue(':password', $mypassword, PDO::PARAM_STR);
-$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-$count = pg_num_rows($results);
+//$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+//$count = pg_num_rows($results);
 
 if($count == 1) {
     $_SESSION['login_user'] = $myusername;
