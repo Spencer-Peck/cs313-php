@@ -12,16 +12,16 @@ $statement->bindValue(':password', $mypassword, PDO::PARAM_STR);
 $statement->execute();
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $val = $results[0]['user_id'];
-$count = pg_num_rows($statement);
-//echo '<h1>'.$results.'</h1>';
+$count = count($results);
+echo '<h1>'.$val.'</h1>';
 
 if($count == 1) {
     $_SESSION['login_user'] = $myusername;
     $_SESSION['user_id'] = $val;
-    header("location: home.php");
+    //header("location: home.php");
 }else {
     $error = "Your Login Name or Password is invalid";
-    header("location: login_form.php?error=true");
+    //header("location: login_form.php?error=true");
 
 }
 
