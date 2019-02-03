@@ -13,15 +13,15 @@ $statement->execute();
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $val = $results[0]['user_id'];
 $count = count($results);
-echo '<h1>'.$val.'</h1>';
+..echo '<h1>'.$val.'</h1>';
 
 if($count == 1) {
     $_SESSION['login_user'] = $myusername;
     $_SESSION['user_id'] = $val;
-    //header("location: home.php");
+    header("location: home.php");
 }else {
     $error = "Your Login Name or Password is invalid";
-    //header("location: login_form.php?error=true");
+    header("location: login_form.php?error=true");
 
 }
 
