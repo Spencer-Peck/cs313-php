@@ -1,6 +1,6 @@
 <?php
 include 'db_connect.php';
-session_start();
+
 $user_check = $_SESSION['login_user'];
 $statement = $db->prepare('SELECT user_name FROM users WHERE user_name = :username');
 $statement->bindValue(':username', $user_check, PDO::PARAM_STR);

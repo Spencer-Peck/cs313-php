@@ -33,7 +33,7 @@
       <a class="nav-link" href="#">Add/Edit Games</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Log out</a>
+      <a class="nav-link" href="logout.php">Log out</a>
     </li>
   </ul>
 </nav>

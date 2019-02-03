@@ -1,5 +1,5 @@
 CREATE TABLE games (
-	game_id     int SERIAL,
+	game_id     SERIAL,
 	user_id     int,
 	game_name   varchar(200),
 	game_img    bytea
@@ -7,18 +7,26 @@ CREATE TABLE games (
 
 
 CREATE TABLE game_session (
-	session_id            int SERIAL,
+	session_id            SERIAL,
 	user_id               int,
-	game_id               int SERIAL,
+	game_id               SERIAL,
 	winner_name           varchar(200),
 	score                 varchar(200),
 	session_description   varchar(200),
 	date                  date  
 );
 
+CREATE TABLE users (
+	user_id     SERIAL,
+	user_name   varchar(200),
+	password    varchar(200)
+);
+
 INSERT INTO games (game_id, game_name) VALUES ('1', 'Aquire');
 INSERT INTO games (game_id, game_name) VALUES ('2', 'Risk');
 INSERT INTO games (game_id, game_name) VALUES ('3', 'Settlers of Catan');
+
+INSERT INTO users (user_name, password) VALUES ('spencer', 'pass');
 
 INSERT INTO game_session (session_id, game_id, winner_name, score, session_description, date) 
 	VALUES  (1, 1, 'Spencer Peck', '50', 'super fun', '2019-1-29');
@@ -35,3 +43,6 @@ INSERT INTO game_session (session_id, game_id, winner_name, score, session_descr
 
 	INSERT INTO game_session (session_id, game_id, winner_name, score, session_description, date) 
 	VALUES  (5, 3, 'Daniel Southwick', '87', 'poop', '1993-12-12');
+
+	DROP TABLE games;
+	DROP TABLE game_session;
