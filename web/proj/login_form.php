@@ -30,7 +30,7 @@
 <form action="login.php" method="post">
   <div class="form-group">
     <label for="username">User Name</label>
-    <input type="text" class="form-control" name ="username id="username" placeholder="Enter username">
+    <input type="text" class="form-control" name ="username" id="username" placeholder="Enter username">
   </div>
   <div class="form-group">
     <label for="password">Password</label>
