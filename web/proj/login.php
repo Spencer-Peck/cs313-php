@@ -14,7 +14,7 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 if($count == 1) {
     $_SESSION['login_user'] = $myusername;
-    $_SESSION['user_id'] = $results['user_id']
+    //$_SESSION['user_id'] = $results['user_id']
     header("location: home.php");
 }else {
     $error = "Your Login Name or Password is invalid";
