@@ -2,8 +2,8 @@
 
 include 'db_connect.php';
 
-    $username = $_POST['username'];
-    $password = $_POST['pwd'];
+    $username = $_POST["username"];
+    $password = $_POST["pwd"];
 
 
     if (isset($username) && isset($password)){
