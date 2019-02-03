@@ -7,10 +7,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	 $myusername = pg_escape_string($_POST['username']);
      $mypassword = pg_escape_string($_POST['password']);
 
-     $stmt->bindValue(':username', $myusername, PDO::PARAM_STR);
-     $stmt->bindValue(':password', $mypassword, PDO::PARAM_STR);
 
      $statement = $db->query('SELECT user_id FROM users WHERE user_name = :username AND password = :password');
+     $statement->bindValue(':username', $myusername, PDO::PARAM_STR);
+     $statement->bindValue(':password', $mypassword, PDO::PARAM_STR);
      $results = $statement->fetchAll(PDO::FETCH_ASSOC);
      $count = pg_num_rows($results);
 
