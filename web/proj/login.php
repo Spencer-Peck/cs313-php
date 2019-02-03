@@ -2,8 +2,8 @@
 
 session_start();
 
-$myusername = $_POST['username'];
-$mypassword = $_POST['pwd'];
+$myusername = $_POST["username"];
+$mypassword = $_POST["pwd"];
 $count = 0;
 
 $statement = $db->prepare('SELECT user_id FROM users WHERE user_name = :username AND password = :password');
