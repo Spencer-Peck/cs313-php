@@ -41,6 +41,11 @@
 <br>
 <a href="">Create Account</a>
 </div>
+<?php 
+if (isset($_SESSION['expired'])) {
+echo '<div class="alert alert-warning" role="alert">You were signed out due to inactivity</div>'
+}
+?>
 
 </body>
 </html>
