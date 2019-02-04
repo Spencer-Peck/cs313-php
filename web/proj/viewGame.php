@@ -2,6 +2,7 @@
 <?php include 'order.php';?>
 
 <?php
+$user_id = $_GET["user_id"];
 $game_id = $_GET["game_id"];
 $name = $_GET["name"];
 $add_form_url = 'add_score_form.php?game_id='.$game_id.'&name='.$name;
@@ -24,7 +25,7 @@ $add_form_url = 'add_score_form.php?game_id='.$game_id.'&name='.$name;
     <tbody>
 
     <?php
-    foreach ($db->query('SELECT session_id, winner_name, score, session_description, date FROM game_session WHERE game_id =' . $game_id . ' ORDER BY date DESC') as $row)
+    foreach ($db->query('SELECT session_id, winner_name, score, session_description, date FROM game_session WHERE game_id =' . $game_id . ' and user_id ='.$user_id.' ORDER BY date DESC') as $row)
     {
     	include 'score_fetch.php';
     }
