@@ -14,12 +14,11 @@ if ($action == 'delete'){
 }
 
 if ($action == 'add'){
-	$stmt = $db->prepare('INSERT INTO game_session (game_id, winner_name, score, date) VALUES  (:game_id, :winner, :score, :adate);');
+	$stmt = $db->prepare('INSERT INTO game_session (game_id, winner_name, score, date, ) VALUES  (:game_id, :winner, :score, :adate);');
 	$stmt->bindValue(':game_id', $game_id, PDO::PARAM_INT);
 	$stmt->bindValue(':winner', $winner, PDO::PARAM_STR);
 	$stmt->bindValue(':score', $score, PDO::PARAM_STR);
 	$stmt->bindValue(':adate', $theDate, PDO::PARAM_STR);
-	$stmt->execute();
 }
 
 

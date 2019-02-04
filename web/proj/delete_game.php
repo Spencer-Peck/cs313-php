@@ -5,5 +5,7 @@ $game_id = $_GET["game_id"];
 //echo '<h1>'.$score.'</h1>';
 	$stmt = $db->prepare('DELETE FROM games WHERE game_id = ' . $game_id);
 	$stmt->execute();
+	$stmt = $db->prepare('DELETE FROM game_session WHERE game_id = ' . $game_id);
+	$stmt->execute();
 	header("location:home.php");
 ?>

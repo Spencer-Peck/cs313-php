@@ -9,7 +9,7 @@ CREATE TABLE games (
 CREATE TABLE game_session (
 	session_id            SERIAL,
 	user_id               int,
-	game_id               SERIAL,
+	game_id               int,
 	winner_name           varchar(200),
 	score                 varchar(200),
 	session_description   varchar(200),
