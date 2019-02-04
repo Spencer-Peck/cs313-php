@@ -38,6 +38,10 @@ if (isset($_SESSION['incorrect'])) {
 echo '<div class="alert alert-danger" role="alert">Incorrect username or password</div>';
 unset($_SESSION['incorrect']); 
 }
+if (isset($_SESSION['expired'])) {
+echo '<div class="alert alert-warning" role="alert">You were logged out due to inactivity</div>';
+unset($_SESSION['expired']); 
+}
 ?>
 <form action="login.php" method="post">
   <div class="form-group">
