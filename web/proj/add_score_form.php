@@ -1,4 +1,5 @@
 <?php include 'header.php';
+include 'header.php';
 $name = $_GET["name"];
 ?>
 <div class="container-fluid">
