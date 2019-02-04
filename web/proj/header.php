@@ -11,7 +11,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="path/to/jquery.js"></script>
 <script type="text/javascript" src="path/to/bootstrap-tooltip.js"></script>
-<script type="text/javascript" src="path/to/bootstrap-confirmation.js"></script> 
+<script type="text/javascript" src="path/to/bootstrap-confirmation.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
 
 </head>
 
@@ -31,7 +32,7 @@ $username = $_SESSION['login_user'];
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#"><?php echo $username ?></a>
+      <a class="nav-link" href="#"><i class="fas fa-user-circle" style="font-size:24px;"></i><?php echo $username ?></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="logout.php">Log out</a>
