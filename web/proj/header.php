@@ -32,7 +32,7 @@ $username = $_SESSION['login_user'];
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#"><i class="fas fa-user-circle" style="font-size:20px;"></i><?php echo $username ?></a>
+      <a class="nav-link" href="#"><i class="fas fa-user-circle" style="font-size:20px;"></i>&nbsp;<?php echo $username ?></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="logout.php">Log out</a>
