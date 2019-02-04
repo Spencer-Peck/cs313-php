@@ -22,7 +22,7 @@ if($count == 1) {
     header("location: home.php");
 }else {
     $error = "Your Login Name or Password is invalid";
-    $_SESSION['error'] = true;
+    $_SESSION['incorrect'] = TRUE;
     header("location: login_form.php?error=true");
 
 }

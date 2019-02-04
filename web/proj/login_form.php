@@ -34,6 +34,10 @@ echo '<div class="alert alert-success" role="alert">Account created successfully
 unset($_SESSION['create']); 
 
 }
+if (isset($_SESSION['incorrect'])) {
+echo '<div class="alert alert-danger" role="alert">Incorrect username or password</div>';
+unset($_SESSION['incorrect']); 
+}
 ?>
 <form action="login.php" method="post">
   <div class="form-group">
