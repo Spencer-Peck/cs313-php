@@ -19,6 +19,7 @@ if ($action == 'add'){
 	$stmt->bindValue(':winner', $winner, PDO::PARAM_STR);
 	$stmt->bindValue(':score', $score, PDO::PARAM_STR);
 	$stmt->bindValue(':adate', $theDate, PDO::PARAM_STR);
+	$stmt->execute();
 }
 
 
