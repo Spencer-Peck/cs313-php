@@ -9,7 +9,7 @@
   <table class="table" id="games">
     <thead>
       <tr>
-        <th>Name </th>
+        <th>View Score </th>
         <th>Delete</th>
       </tr>
     </thead>
