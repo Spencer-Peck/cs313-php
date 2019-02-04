@@ -1,5 +1,5 @@
 <?php include 'header.php';
-include 'header.php';
+include 'add_score_form.html';
 $name = $_GET["name"];
 ?>
 <div class="container-fluid">
