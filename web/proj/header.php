@@ -17,6 +17,7 @@
 
 <body>
 <?php include 'session.php';
+$username = $_SESSION['login_user'];
 
 ?>
 
@@ -30,7 +31,7 @@
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">Add/Edit Games</a>
+      <a class="nav-link" href="#"><?php echo $username ?></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="logout.php">Log out</a>
