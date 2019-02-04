@@ -5,11 +5,10 @@
 
 <div class="container">
 
-  <table class="table table-striped" id="games">
+  <table class="table" id="games">
     <thead>
       <tr>
         <th>Name </th>
-        <th>View Scores</th>
         <th>Delete</th>
       </tr>
     </thead>
