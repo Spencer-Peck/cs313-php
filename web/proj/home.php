@@ -4,7 +4,7 @@
 
 
 <div class="container">
-    <h1>Games</h1>
+    <h1>Games <div class="text-right"><a href=<?php echo '"'.$add_form_url.'"'; ?> class="btn btn-success " role="button" >Add Game</a></div></h1>
 
   <table class="table" id="games">
     <thead>
