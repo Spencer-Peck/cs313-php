@@ -1,6 +1,7 @@
 <?php include 'header.php';
 ?>
 <div class="container-fluid">
+	<h1>Add Game</h1><br>
 <form action="add_game.php" method="post">
 	<div class="form-group">
     <label for="game_name">Game Name:</label>
