@@ -11,4 +11,6 @@ include 'session.php';
 	$stmt->bindValue(':game_name', $game_name, PDO::PARAM_STR);
 	$stmt->execute();
 
+	header("location:home.php");
+
 ?>
