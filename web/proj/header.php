@@ -19,6 +19,8 @@
 <body>
 <?php include 'session.php';
 $username = $_SESSION['login_user'];
+$firstname = $_SESSION['first_name'];
+$lastname = $_SESSION['last_name'];
 
 ?>
 
@@ -32,7 +34,7 @@ $username = $_SESSION['login_user'];
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#"><i class="fas fa-user-circle" style="font-size:16px;"></i>&nbsp;<?php echo $username ?></a>
+      <a class="nav-link" href="#"><i class="fas fa-user-circle" style="font-size:16px;"></i>&nbsp;<?php echo $firstname.' '.$lastname ?></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="logout.php">Log out</a>

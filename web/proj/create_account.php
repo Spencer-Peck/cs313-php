@@ -4,8 +4,6 @@ include 'db_connect.php';
 
     $username = $_POST["username"];
     $password = $_POST["pwd"];
-    $_SESSION['first_name'] = $_POST['firstname'];
-    $_SESSION['last_name'] = $_POST['lastname'];
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
 
