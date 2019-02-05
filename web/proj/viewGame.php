@@ -2,7 +2,7 @@
 <?php include 'order.php';?>
 
 <?php
-$user_id = $_GET["user_id"];
+$user_id = $_SESSION["user_id"];
 $game_id = $_GET["game_id"];
 $name = $_GET["name"];
 $add_form_url = 'add_score_form.php?game_id='.$game_id.'&name='.$name;
