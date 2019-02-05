@@ -11,7 +11,9 @@ $theDate = date("Y-m-d");
 //echo '<h1>'.$score.'</h1>';
 if ($action == 'delete'){
 	$session_id = $_GET["session_id"];
-	$stmt = $db->prepare('DELETE FROM game_session WHERE session_id = ' . $session_id.'and user_id ='.$user_id);
+	$stmt = $db->prepare('DELETE FROM game_session WHERE session_id = :session_id AND user_id = :user_id');
+	$stmt->bindValue(':user_id', $user_id, PDO::PARAM_STR);
+	$stmt->bindValue(':session_id', $session_id, PDO::PARAM_STR);
 	$stmt->execute();
 }
 
@@ -21,6 +23,7 @@ if ($action == 'add'){
 	$stmt->bindValue(':winner', $winner, PDO::PARAM_STR);
 	$stmt->bindValue(':score', $score, PDO::PARAM_STR);
 	$stmt->bindValue(':adate', $theDate, PDO::PARAM_STR);
+	$stmt->bindValue(':user_id', $user_id, PDO::PARAM_STR);
 	$stmt->execute();
 }
 
