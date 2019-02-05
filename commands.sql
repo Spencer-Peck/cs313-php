@@ -16,11 +16,12 @@ CREATE TABLE game_session (
 	date                  date  
 );
 
-CREATE TABLE users (
-	user_id     SERIAL,
-	user_name   varchar(200),
-	password    varchar(200)
-);
+INSERT INTO users (user_name, password, first_name, last_name) VALUES ('Spencer Peck', 'Dalltx13', 'Spencer', 'Peck');
+INSERT INTO users (user_name, password, first_name, last_name) VALUES ('waynepeck', 'waynepeck', 'Wayne', 'Peck');
+INSERT INTO users (user_name, password, first_name, last_name) VALUES ('obama', '2226', 'Barak', 'Obama');
+INSERT INTO users (user_name, password, first_name, last_name) VALUES ('Das', 'password', 'Daniel', 'Southwick');
+
+
 
 INSERT INTO games (game_id, game_name, user_id) VALUES ('1', 'Aquire', 1);
 INSERT INTO games (game_id, game_name, user_id) VALUES ('2', 'Risk', 1);

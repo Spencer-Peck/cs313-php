@@ -29,6 +29,14 @@
   <br>
 <form action="create_account.php" method="post">
   <div class="form-group">
+    <label for="firstname">First Name</label>
+    <input type="text" class="form-control" name ="firstname" placeholder="First Name">
+  </div>
+  <div class="form-group">
+    <label for="lastname">Last Name</label>
+    <input type="text" class="form-control" name ="lastname" placeholder="Last Name">
+  </div>
+  <div class="form-group">
     <label for="username">Create User Name</label>
     <input type="text" class="form-control" name ="username" id="username" placeholder="Enter username">
   </div>
