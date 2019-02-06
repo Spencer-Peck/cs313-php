@@ -34,7 +34,7 @@ $lastname = $_SESSION['last_name'];
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#"><i class="fas fa-user-circle" style="font-size:16px;"></i>&nbsp;<?php echo $firstname.' '.$lastname ?></a>
+      <a class="nav-link" href="#"><?php echo $firstname.' '.$lastname ?>&nbsp;<i class="fas fa-user-circle" style="font-size:16px;"></i></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="logout.php">Log out</a>
