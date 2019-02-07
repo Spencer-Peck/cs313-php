@@ -4,7 +4,7 @@ include 'session.php';
 
     $game_name = $_POST["game_name"];
     $user_id = $_SESSION['user_id'];
-    $game_img = $_POST["game_pic"]
+    $game_img = $_POST["game_pic"];
 
 
     $stmt = $db->prepare('INSERT INTO games (user_id, game_name, game_img) VALUES  (:user_id, :game_name, :game_img)');
