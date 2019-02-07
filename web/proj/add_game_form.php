@@ -7,6 +7,10 @@
     <label for="game_name">Game Name:</label>
     <input type="text" name="game_name" class="form-control" id="game_name">
   </div>
+  <div class="form-group">
+    <label for="game_pic">Game Picture Url:</label>
+    <input type="text" name="game_pic" class="form-control">
+  </div>
 
   <button type="submit" class="btn btn-primary" value="Submit">Add Game</button>
 </form>

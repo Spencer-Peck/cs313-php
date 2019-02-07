@@ -2,7 +2,7 @@ CREATE TABLE games (
 	game_id     SERIAL,
 	user_id     int,
 	game_name   varchar(200),
-	game_img    bytea
+	game_img    varchar(200)
 );
 
 
