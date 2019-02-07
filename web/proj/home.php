@@ -20,7 +20,7 @@
     $user_id = $_SESSION['user_id'];
     foreach ($db->query('SELECT game_name, game_id FROM games WHERE user_id = ' . $user_id) as $row)
     {
-        echo '<tr><td><a href="viewGame.php?game_id=' . $row['game_id'] .'&name=' . $row['game_name'] . '"class="list-group-item list-group-item-action">' . $row['game_name'] . '</a></td><td> <img src="https://media.wired.com/photos/5a595516f11e325008172bcb/master/pass/BabyGlimpseBaby-640504936.jpg" class="img-fluid" alt="Responsive image"></td><td> <a href="delete_game.php?game_id='.$row['game_id'].'" role="button" class="btn btn-danger">Delete</a></td></tr>';
+        echo '<tr><td><a href="viewGame.php?game_id=' . $row['game_id'] .'&name=' . $row['game_name'] . '"class="list-group-item list-group-item-action">' . $row['game_name'] . '</a></td><td> <img src="https://media.wired.com/photos/5a595516f11e325008172bcb/master/pass/BabyGlimpseBaby-640504936.jpg" class="img-fluid img-thumbnail" width="304" height="236"></td><td> <a href="delete_game.php?game_id='.$row['game_id'].'" role="button" class="btn btn-danger">Delete</a></td></tr>';
     }
 
     ?>
