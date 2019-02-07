@@ -10,6 +10,7 @@
     <thead>
       <tr>
         <th>View Score</th>
+        <th>Game Image</th>
         <th>Delete</th>
       </tr>
     </thead>
