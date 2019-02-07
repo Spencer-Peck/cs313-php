@@ -4,12 +4,12 @@ include 'db_connect.php';
 
     $username = $_POST["username"];
     $password = $_POST["pwd"];
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
+    $firstname = $_POST["firstname"];
+    $lastname = $_POST["lastname"];
 
 
     if (isset($username) && isset($password)){
-    $stmt = $db->prepare('INSERT INTO users (user_name, password) VALUES  (:username, :password)');
+    $stmt = $db->prepare('INSERT INTO users (user_name, password, first_name, last_name) VALUES  (:username, :password, :firstname, :lastname)');
 	$stmt->bindValue(':username', $username, PDO::PARAM_STR);
 	$stmt->bindValue(':password', $password, PDO::PARAM_STR);
 	$stmt->bindValue(':firstname', $firstname, PDO::PARAM_STR);
