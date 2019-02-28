@@ -17,7 +17,7 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $count = count($results);
 
 
-    if (isset($username) && isset($password) && $count == 1){
+    if (isset($username) && isset($password) && $count == 0){
     $stmt = $db->prepare('INSERT INTO users (user_name, password, first_name, last_name) VALUES  (:username, :password, :firstname, :lastname)');
 	$stmt->bindValue(':username', $username, PDO::PARAM_STR);
 	$stmt->bindValue(':password', $password, PDO::PARAM_STR);
