@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,6 +28,12 @@
 <div class="container">
   <h1>Create Account</h1>
   <br>
+  <?php 
+if (isset($_SESSION["accountExists"])) {
+echo '<div class="alert alert-warning" role="alert">Account already exists</div>';
+unset($_SESSION['ccountExists']); 
+
+}?>
 <form action="create_account.php" method="post">
   <div class="form-group">
     <label for="firstname">First Name</label>
