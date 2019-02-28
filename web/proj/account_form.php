@@ -30,7 +30,7 @@
   <br>
   <?php 
 if (isset($_SESSION["accountExists"])) {
-echo '<div class="alert alert-warning" role="alert">Account already exists</div>';
+echo '<div class="alert alert-warning" role="alert">Username and Password already exist!</div>';
 unset($_SESSION['ccountExists']); 
 
 }?>
