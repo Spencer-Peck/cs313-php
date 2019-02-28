@@ -19,7 +19,7 @@
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand/logo -->
-  <a class="navbar-brand" href="">Score Keeper</a>
+  <a class="navbar-brand" href="login_form.php">Score Keeper</a>
   
   <!-- Links -->
 </nav>
