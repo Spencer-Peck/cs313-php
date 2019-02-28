@@ -8,7 +8,7 @@ include 'db_connect.php';
     $lastname = $_POST["lastname"];
 
 
-$statement = $db->prepare('SELECT user_id FROM users WHERE user_name = :username AND password = :password');
+$statement = $db->prepare('SELECT user_id FROM users WHERE LOWER(user_name) = LOWER(:username) AND password = :password');
 $statement->bindValue(':username', $username, PDO::PARAM_STR);
 $statement->bindValue(':password', $password, PDO::PARAM_STR);
 $statement->execute();
@@ -27,6 +27,7 @@ $count = count($results);
 	$_SESSION["create"] = TRUE;
 	header("location:login_form.php");
 }else{
+	$_SESSION["accountExists"] = TRUE;
 	header("location:account_form.php");
 }
 
