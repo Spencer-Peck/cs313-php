@@ -8,7 +8,16 @@ include 'db_connect.php';
     $lastname = $_POST["lastname"];
 
 
-    if (isset($username) && isset($password)){
+$statement = $db->prepare('SELECT user_id FROM users WHERE user_name = :username AND password = :password');
+$statement->bindValue(':username', $username, PDO::PARAM_STR);
+$statement->bindValue(':password', $password, PDO::PARAM_STR);
+$statement->execute();
+$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+$count = count($results);
+
+
+    if (isset($username) && isset($password) && $count == 1){
     $stmt = $db->prepare('INSERT INTO users (user_name, password, first_name, last_name) VALUES  (:username, :password, :firstname, :lastname)');
 	$stmt->bindValue(':username', $username, PDO::PARAM_STR);
 	$stmt->bindValue(':password', $password, PDO::PARAM_STR);
