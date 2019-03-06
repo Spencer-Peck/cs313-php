@@ -1,0 +1,18 @@
+{
+  "name": "postal_calculator",
+  "version": "1.0.0",
+  "description": "a postal calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spencer-Peck/cs313-php/tree/master/web"
+  },
+  "author": "Spencer Peck",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
